@@ -6,29 +6,23 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class AccountRegistrationPage extends BasePage {
-
     //Locators
     @FindBy(xpath = "//input[@id='input-firstname']")
     WebElement txtFirstName;
-
     @FindBy(xpath = "//input[@id='input-lastname']")
     WebElement txtLastName;
-
     @FindBy(xpath = "//input[@id='input-email']")
     WebElement txtEmail;
-
     @FindBy(xpath = "//input[@id='input-password']")
     WebElement txtPassword;
-
     @FindBy(xpath = "//input[@name='agree']")
     WebElement chkdPolicy;
-
     @FindBy(xpath = "//button[normalize-space()='Continue']")
     WebElement btnClick;
-
     @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
     WebElement msgConfirmation;
 
+    //constructor
     public AccountRegistrationPage(WebDriver driver) {
         super(driver);
     }
