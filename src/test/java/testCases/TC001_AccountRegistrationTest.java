@@ -7,7 +7,7 @@ import pageObject.HomePage;
 
 public class TC001_AccountRegistrationTest extends BaseCase {
 
-    @Test
+    @Test(groups = {"Regression", "Master"})
     void verifyAccountRegistration() {
 
         logger.info("**** TC001_AccountRegistrationTest ****");

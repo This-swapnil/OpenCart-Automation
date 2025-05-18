@@ -44,8 +44,18 @@ public class AccountRegistrationPage extends BasePage {
         txtPassword.sendKeys(pwd);
     }
 
+    public void scrollToBottom() {
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
     public void setPrivacyPolicy() {
+//        js.executeScript("arguments[0].scrollIntoView(true);", chkdPolicy);
         wait.until(ExpectedConditions.elementToBeClickable(chkdPolicy)).click();
+//        Thread.sleep(2000);
+//        wait.until(ExpectedConditions.visibilityOf(chkdPolicy));
+//        js.executeScript("arguments[0].scrollIntoView({block: 'center'});", chkdPolicy);
+//        wait.until(ExpectedConditions.elementToBeClickable(chkdPolicy)).click();
+//        chkdPolicy.click();
     }
 
     public void clickSubmit() {
