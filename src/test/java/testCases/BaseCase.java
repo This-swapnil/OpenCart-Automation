@@ -49,7 +49,7 @@ public class BaseCase {
             //OS
             if (os.equalsIgnoreCase("linux")) {
                 capabilities.setPlatform(Platform.LINUX);
-            } else if (os.equalsIgnoreCase("windows")) {
+            } else if (os.equalsIgnoreCase("Windows")) {
                 capabilities.setPlatform(Platform.WIN11);
             } else {
                 System.out.println("No matching os");
@@ -61,6 +61,8 @@ public class BaseCase {
                 capabilities.setBrowserName("chrome");
             } else if (br.equalsIgnoreCase("edge")) {
                 capabilities.setBrowserName("MicrosoftEdge");
+            } else if (br.equalsIgnoreCase("firefox")) {
+                capabilities.setBrowserName("firefox");
             } else {
                 System.out.println("No matching browser");
                 return;
